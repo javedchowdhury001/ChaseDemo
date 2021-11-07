@@ -1,0 +1,733 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 6364961500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BeforeActions.beforeActions(Scenario)"
+            }
+          }
+        ],
+        "line": 14,
+        "name": "Find specific atm \u0026 branch location",
+        "description": "",
+        "id": "atm-\u0026-branch-locator-function;find-specific-atm-\u0026-branch-location;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 787718200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "AfterActions.afterActions()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1901624600,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Open Chase website",
+            "match": {
+              "location": "ChaseATMStep.open_Chase_website()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1487193100,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Click Site Map",
+            "match": {
+              "location": "ChaseATMStep.click_Site_Map()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2076386500,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Select ATM",
+            "match": {
+              "location": "ChaseATMStep.select_ATM()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 20041920600,
+              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"/html[1]/body[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[2]/form[1]/input[1]\"}\n  (Session info: chrome\u003d94.0.4606.71)\nFor documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.12.0\u0027, revision: \u00277c6e0b3\u0027, time: \u00272018-05-08T14:04:26.12Z\u0027\nSystem info: host: \u0027JAVED\u0027, ip: \u0027192.168.89.1\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_181\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 94.0.4606.71, chrome: {chromedriverVersion: 94.0.4606.61 (418b78f5838ed..., userDataDir: C:\\Users\\Javd\\AppData\\Local...}, goog:chromeOptions: {debuggerAddress: localhost:51542}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: f20be73cc5eb0c7750d02b3be3d02b8c\n*** Element info: {Using\u003dxpath, value\u003d/html[1]/body[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[2]/form[1]/input[1]}\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:317)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:419)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:353)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:309)\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat com.sun.proxy.$Proxy18.sendKeys(Unknown Source)\r\n\tat abc.tt.chase.pageAction.ChaseActions.selectZip(ChaseActions.java:31)\r\n\tat abc.tt.chase.stepDef.ChaseATMStep.enter(ChaseATMStep.java:32)\r\n\tat ✽.And Enter \"11377\"(ChaseATM.feature:8)\r\n",
+              "status": "failed"
+            },
+            "line": 8,
+            "name": "Enter \"11377\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "11377",
+                  "offset": 7
+                }
+              ],
+              "location": "ChaseATMStep.enter(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "Select closest branch",
+            "match": {
+              "location": "ChaseATMStep.select_closest_branch()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 10,
+            "name": "Validate with ATM \"Spanish\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Spanish",
+                  "offset": 19
+                }
+              ],
+              "location": "ChaseATMStep.validate_with_ATM(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@regression"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 5151051700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BeforeActions.beforeActions(Scenario)"
+            }
+          }
+        ],
+        "line": 15,
+        "name": "Find specific atm \u0026 branch location",
+        "description": "",
+        "id": "atm-\u0026-branch-locator-function;find-specific-atm-\u0026-branch-location;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 859892200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "AfterActions.afterActions()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 991270100,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Open Chase website",
+            "match": {
+              "location": "ChaseATMStep.open_Chase_website()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1632912700,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Click Site Map",
+            "match": {
+              "location": "ChaseATMStep.click_Site_Map()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1783059500,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Select ATM",
+            "match": {
+              "location": "ChaseATMStep.select_ATM()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 20039750900,
+              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"/html[1]/body[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[2]/form[1]/input[1]\"}\n  (Session info: chrome\u003d94.0.4606.71)\nFor documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.12.0\u0027, revision: \u00277c6e0b3\u0027, time: \u00272018-05-08T14:04:26.12Z\u0027\nSystem info: host: \u0027JAVED\u0027, ip: \u0027192.168.89.1\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_181\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 94.0.4606.71, chrome: {chromedriverVersion: 94.0.4606.61 (418b78f5838ed..., userDataDir: C:\\Users\\Javd\\AppData\\Local...}, goog:chromeOptions: {debuggerAddress: localhost:54327}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 7d1a35e10af1b714a4bb4d15a3c59780\n*** Element info: {Using\u003dxpath, value\u003d/html[1]/body[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[2]/form[1]/input[1]}\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:317)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:419)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:353)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:309)\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat com.sun.proxy.$Proxy18.sendKeys(Unknown Source)\r\n\tat abc.tt.chase.pageAction.ChaseActions.selectZip(ChaseActions.java:33)\r\n\tat abc.tt.chase.stepDef.ChaseATMStep.enter(ChaseATMStep.java:32)\r\n\tat ✽.And Enter \"8989898\"(ChaseATM.feature:8)\r\n",
+              "status": "failed"
+            },
+            "line": 8,
+            "name": "Enter \"8989898\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "8989898",
+                  "offset": 7
+                }
+              ],
+              "location": "ChaseATMStep.enter(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "Select closest branch",
+            "match": {
+              "location": "ChaseATMStep.select_closest_branch()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 10,
+            "name": "Validate with ATM \"None\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "None",
+                  "offset": 19
+                }
+              ],
+              "location": "ChaseATMStep.validate_with_ATM(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@regression"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 5595232100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BeforeActions.beforeActions(Scenario)"
+            }
+          }
+        ],
+        "line": 16,
+        "name": "Find specific atm \u0026 branch location",
+        "description": "",
+        "id": "atm-\u0026-branch-locator-function;find-specific-atm-\u0026-branch-location;;4",
+        "after": [
+          {
+            "result": {
+              "duration": 767034100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "AfterActions.afterActions()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1311962800,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Open Chase website",
+            "match": {
+              "location": "ChaseATMStep.open_Chase_website()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1604789000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Click Site Map",
+            "match": {
+              "location": "ChaseATMStep.click_Site_Map()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1809796300,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Select ATM",
+            "match": {
+              "location": "ChaseATMStep.select_ATM()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 20039232300,
+              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"/html[1]/body[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[2]/form[1]/input[1]\"}\n  (Session info: chrome\u003d94.0.4606.71)\nFor documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.12.0\u0027, revision: \u00277c6e0b3\u0027, time: \u00272018-05-08T14:04:26.12Z\u0027\nSystem info: host: \u0027JAVED\u0027, ip: \u0027192.168.89.1\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_181\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 94.0.4606.71, chrome: {chromedriverVersion: 94.0.4606.61 (418b78f5838ed..., userDataDir: C:\\Users\\Javd\\AppData\\Local...}, goog:chromeOptions: {debuggerAddress: localhost:55629}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 91dd2bcbb1f96dd33601ccf992d2d957\n*** Element info: {Using\u003dxpath, value\u003d/html[1]/body[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[2]/form[1]/input[1]}\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:317)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:419)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:353)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:309)\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat com.sun.proxy.$Proxy18.sendKeys(Unknown Source)\r\n\tat abc.tt.chase.pageAction.ChaseActions.selectZip(ChaseActions.java:35)\r\n\tat abc.tt.chase.stepDef.ChaseATMStep.enter(ChaseATMStep.java:32)\r\n\tat ✽.And Enter \"000\"(ChaseATM.feature:8)\r\n",
+              "status": "failed"
+            },
+            "line": 8,
+            "name": "Enter \"000\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "000",
+                  "offset": 7
+                }
+              ],
+              "location": "ChaseATMStep.enter(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "Select closest branch",
+            "match": {
+              "location": "ChaseATMStep.select_closest_branch()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 10,
+            "name": "Validate with ATM \"None\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "None",
+                  "offset": 19
+                }
+              ],
+              "location": "ChaseATMStep.validate_with_ATM(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@regression"
+          }
+        ]
+      }
+    ],
+    "name": "ATM \u0026 Branch Locator Function",
+    "description": "",
+    "id": "atm-\u0026-branch-locator-function",
+    "keyword": "Feature",
+    "uri": "ChaseATM.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@regression"
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 4992360700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BeforeActions.beforeActions(Scenario)"
+            }
+          }
+        ],
+        "line": 4,
+        "name": "Open Chase HelpfulTips",
+        "description": "",
+        "id": "chase-helpfultips-functionality;open-chase-helpfultips",
+        "after": [
+          {
+            "result": {
+              "duration": 875405900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "AfterActions.afterActions()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 908077300,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Open Chase website",
+            "match": {
+              "location": "ChaseATMStep.open_Chase_website()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1926385400,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Search for Customer Service",
+            "match": {
+              "location": "ChaseHelpfultipsSteps.search_for_Customer_Service()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1295591300,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Select More helpful tips videos",
+            "match": {
+              "location": "ChaseHelpfultipsSteps.select_More_helpful_tips_videos()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1349033200,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Select Personal Banking",
+            "match": {
+              "location": "ChaseHelpfultipsSteps.Select_Personal_Banking()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 321098900,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "select Replace your debit card",
+            "match": {
+              "location": "ChaseHelpfultipsSteps.select_Replace_your_debit_card()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 336172300,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "Item page should play video",
+            "match": {
+              "location": "ChaseHelpfultipsSteps.item_page_should_play_video()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Chase HelpfulTips Functionality",
+    "description": "",
+    "id": "chase-helpfultips-functionality",
+    "keyword": "Feature",
+    "uri": "ChaseHelpfultips.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@regression"
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 4383064400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BeforeActions.beforeActions(Scenario)"
+            }
+          }
+        ],
+        "line": 4,
+        "name": "Open Merchant Services",
+        "description": "",
+        "id": "chase-merchant-services-functionality;open-merchant-services",
+        "after": [
+          {
+            "result": {
+              "duration": 931546000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "AfterActions.afterActions()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 887553100,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Open Chase website",
+            "match": {
+              "location": "ChaseATMStep.open_Chase_website()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2313973300,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Search for Business Service",
+            "match": {
+              "location": "MerchantServicesSteps.search_for_Customer_Service()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3265231000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Select Merchant Services",
+            "match": {
+              "location": "MerchantServicesSteps.select_More_helpful_tips_videos()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 200030800,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Item page should have Merchant Services",
+            "match": {
+              "location": "MerchantServicesSteps.item_page_should_have_helpful_tips()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Chase Merchant Services Functionality",
+    "description": "",
+    "id": "chase-merchant-services-functionality",
+    "keyword": "Feature",
+    "uri": "MerchantServices.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@regression"
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 5948558300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BeforeActions.beforeActions(Scenario)"
+            }
+          }
+        ],
+        "line": 4,
+        "name": "Schedule a Meeting",
+        "description": "",
+        "id": "schedule-a-meeting;schedule-a-meeting",
+        "after": [
+          {
+            "result": {
+              "duration": 722996300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "AfterActions.afterActions()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 922903000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Open Chase website",
+            "match": {
+              "location": "ChaseATMStep.open_Chase_website()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 5248516200,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user selects Schedule A Meeting",
+            "match": {
+              "location": "ScheduleMeetingSteps.user_selects_Schedule_A_Meeting()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 20058342100,
+              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//body/div[1]/div[5]/main[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[2]/div[1]/form[1]/fieldset[1]/div[1]/div[2]/div[1]/div[1]/input[1]\"}\n  (Session info: chrome\u003d94.0.4606.71)\nFor documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.12.0\u0027, revision: \u00277c6e0b3\u0027, time: \u00272018-05-08T14:04:26.12Z\u0027\nSystem info: host: \u0027JAVED\u0027, ip: \u0027192.168.89.1\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_181\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 94.0.4606.71, chrome: {chromedriverVersion: 94.0.4606.61 (418b78f5838ed..., userDataDir: C:\\Users\\Javd\\AppData\\Local...}, goog:chromeOptions: {debuggerAddress: localhost:55841}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: e3818a57bd0fbb3c043029de0b3802e0\n*** Element info: {Using\u003dxpath, value\u003d//body/div[1]/div[5]/main[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[2]/div[1]/form[1]/fieldset[1]/div[1]/div[2]/div[1]/div[1]/input[1]}\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:317)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:419)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:353)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:309)\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat com.sun.proxy.$Proxy18.click(Unknown Source)\r\n\tat abc.tt.chase.pageAction.ScheduleMeetingActions.noBtn(ScheduleMeetingActions.java:33)\r\n\tat abc.tt.chase.stepDef.ScheduleMeetingSteps.user_is_not_a_Chase_customer(ScheduleMeetingSteps.java:19)\r\n\tat ✽.And user is not a Chase customer(ScheduleMeeting.feature:7)\r\n",
+              "status": "failed"
+            },
+            "line": 7,
+            "name": "user is not a Chase customer",
+            "match": {
+              "location": "ScheduleMeetingSteps.user_is_not_a_Chase_customer()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 8,
+            "name": "user selects radio buttion for Schedule a meeting",
+            "match": {
+              "location": "ScheduleMeetingSteps.user_selects_radio_buttion_for_Schedule_a_meeting()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "user enters required info",
+            "match": {
+              "location": "ScheduleMeetingSteps.user_enters_required_info()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 10,
+            "name": "user can proceed with confirmation",
+            "match": {
+              "location": "ScheduleMeetingSteps.user_can_proceed_with_confirmation()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Schedule a Meeting",
+    "description": "",
+    "id": "schedule-a-meeting",
+    "keyword": "Feature",
+    "uri": "ScheduleMeeting.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@regression"
+      }
+    ]
+  }
+]
